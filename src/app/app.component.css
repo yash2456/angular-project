@@ -1,0 +1,69 @@
+.userNotSelected{
+  -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    width: 800px;
+    margin: auto;
+}
+
+.btncls {
+  background: none;
+   box-shadow: none;
+   cursor: pointer;
+   }
+  .clsCurrentTotal{
+    color: #30357e;
+    cursor: context-menu;
+  }
+  .clsPercentageGreen{
+    color: #2bd26b;
+    cursor: context-menu;
+  }
+  .clsPercentageRed{
+    color: #eb0c0c;
+    cursor: context-menu;
+  }
+  .classCurrentTotalH3{
+    margin-top: 20px;
+  }
+  .active{
+    border-bottom: 4px solid #467ccc;  
+  }
+  .apx-chart-tooltip {
+    background: #ff0000;
+    color: orange;
+  }
+
+  .zoneWisePeopleTitle b{
+    color: rgb(255, 255, 255);
+     border:2px solid #363d7c;
+      border-radius: 8px; 
+      background-color: #363d7c;
+  }
+  .fotfallWord{
+    color: #363d7c;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    cursor:context-menu ;
+  }
+  
+  .fotfallWordSpanTag {
+    border-bottom: 3px solid #363d7c;
+  }
+
+ .modal-body{
+  overflow-x: auto;
+ }
+ .zoneWord{
+   border-bottom: 2px solid #8a8a8a ;
+ }
+ .userNotSelected1{
+  -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}

@@ -1,0 +1,80 @@
+<div class="userNotSelected">
+  <div class="row  mx-lg-1 mb-5 fotfallWord">
+    <div class="col-3 text-right">
+      <img *ngIf='todayDate === tab' draggable="false" src="../assets/live-button .png" class="pr-sm-auto">
+    </div>
+    <div class="col-6 text-center">
+      <span class="fotfallWordSpanTag h2">Footfall</span>
+    </div>
+    <div class="col-4"></div>
+  </div>
+
+
+  <div class="d-flex justify-content-center">
+    <div class="mx-4 btncls" (click)="playPause()">
+      <i class="far fa-{{doesPlay ?'pause':'play'}}-circle fa-2x"></i>
+    </div>
+    <span *ngFor='let weekday of weekDays ;let i = index' [ngClass]="{'active': tab === weekday.Date}"
+      class="mx-4 btncls" (click)="weekDayChangeToChart(weekday.Date, true)">{{weekday.Day}}</span>
+  </div>
+
+  <div>
+    <h3 class="d-flex justify-content-center classCurrentTotalH3"><span class="clsCurrentTotal">{{
+        currentWeekDataFootfall }} </span>
+      <span style="padding-left: 10px;"
+        [ngClass]='{clsPercentageGreen  : (differencePeopleFootfall > 0),clsPercentageRed: !(differencePeopleFootfall > 0)}'>
+        (<span *ngIf="(differencePeopleFootfall > 0)">+</span>{{differencePeopleFootfall}}%)
+      </span>
+    </h3>
+  </div>
+
+
+  <div class="d-flex justify-content-center ">
+
+    <apx-chart [series]="dayWiseFootFall.series" [chart]="dayWiseFootFall.chart"
+      [dataLabels]="dayWiseFootFall.dataLabels" [plotOptions]="dayWiseFootFall.plotOptions"
+      [grid]="dayWiseFootFall.grid" [yaxis]="dayWiseFootFall.yaxis" [colors]="dayWiseFootFall.colors"
+      [tooltip]="dayWiseFootFall.tooltip" [xaxis]="dayWiseFootFall.xaxis" [legend]="dayWiseFootFall.legend">
+    </apx-chart>
+  </div>
+
+  <ng-template #zonewiseFootfallModal let-modal>
+    <div class="userNotSelected1">
+      <div class="modal-header w-100">
+        <div class="d-flex justify-content-center flex-column w-100">
+          <div class="modal-title d-block">
+            <h4 class="text-center " style="padding-bottom: 10px;margin-left: 50px;"><span
+                style="border-width: 4px !important" class="zoneWord"> Zone Wise FootFall
+                Distribution</span>
+            </h4>
+            <div class="d-flex justify-content-between">
+              <div class="ml-lg-5 zoneWisePeopleTitle">
+                <h4>People Count : <b> {{currentWeekZonewiseTotalCount}}</b></h4>
+              </div>
+              <div class="mr-lg-5 zoneWisePeopleTitle">
+                <div>
+                  <h4>Date: <b>{{zoneWisedate}}</b></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <apx-chart [series]="zoneWiseFootFall.series" [chart]="zoneWiseFootFall.chart"
+          [dataLabels]="zoneWiseFootFall.dataLabels" [legend]="zoneWiseFootFall.legend"
+          [plotOptions]="zoneWiseFootFall.plotOptions" [yaxis]="zoneWiseFootFall.yaxis"
+          [colors]="zoneWiseFootFall.colors" [tooltip]="zoneWiseFootFall.tooltip" [xaxis]="zoneWiseFootFall.xaxis"
+          [grid]="zoneWiseFootFall.grid">
+        </apx-chart>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" (click)="modal.close('Close click')">Close</button>
+      </div>
+    </div>
+  </ng-template>
+</div>
