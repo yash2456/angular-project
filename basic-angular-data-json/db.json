@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "title": "json-servertrytrytrytrytrytrytryr",
+      "author": "typicode",
+      "id": 1
+    },
+    {
+      "title": "ytrytryttytrytr ggfdgfdrd",
+      "author": "ytytr",
+      "id": 2
+    },
+    {
+      "title": "retret",
+      "author": "rrtr",
+      "file": "C:\\fakepath\\images.jpg",
+      "id": 3
+    },
+    {
+      "title": "trytrytr",
+      "author": "rtytry",
+      "file": "C:\\fakepath\\images.jpg",
+      "id": 4
+    },
+    {
+      "title": "ryrtytr",
+      "author": "rtytry",
+      "file": "C:\\fakepath\\bedroom-pr.jpeg",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "list": [
+    {
+      "fname": "ad",
+      "lname": "trtert",
+      "address": "retrrtrtrt",
+      "address2": "trtr",
+      "city": "Ahmedabad",
+      "state": "rtrt",
+      "zip": "656565",
+      "gender": "female",
+      "email": "rerer@fdsfs.vv.vgggg",
+      "phonenumber": "8888667657",
+      "hobbies": [
+        "singing",
+        "writting",
+        "cooking",
+        "writting"
+      ],
+      "id": 1
+    },
+    {
+      "fname": "ad",
+      "lname": "trtert",
+      "address": "retrrtrtrt",
+      "address2": "trtr",
+      "city": "Ahmedabad",
+      "state": "rtrt",
+      "zip": "656565",
+      "gender": "male",
+      "email": "rerer@fdsfs.vv.vgggg",
+      "phonenumber": "8888667657",
+      "hobbies": [
+        "playing ",
+        "writting"
+      ],
+      "id": 2
+    },
+    {
+      "fname": "ad",
+      "lname": "trtert",
+      "address": "retrrtrtrt",
+      "address2": "trtr",
+      "city": "Ahmedabad",
+      "state": "rtrt",
+      "zip": "656565",
+      "gender": "male",
+      "email": "rerer@fdsfs.vv.vgggg",
+      "phonenumber": "8888667657",
+      "hobbies": [
+        "singing",
+        "writting",
+        "playing ",
+        "cooking"
+      ],
+      "id": 3
+    },
+    {
+      "fname": "gfdgf",
+      "lname": "dgdffd",
+      "address": "gfdgf",
+      "address2": "fgfd",
+      "city": "Vadodara",
+      "state": "fggfd",
+      "zip": "543543",
+      "gender": "male",
+      "email": "gfgf@sffd.com",
+      "phonenumber": "8554554545",
+      "hobbies": [
+        "playing "
+      ],
+      "id": 4
+    },
+    {
+      "fname": "tdftrtrtr",
+      "lname": "trtert",
+      "address": "retrrtrtrt",
+      "address2": "trtr",
+      "city": "Ahmedabad",
+      "state": "rtrt",
+      "zip": "656565",
+      "gender": "male",
+      "email": "rerer@fdsfs.vv.vgggg",
+      "phonenumber": "8888667657",
+      "hobbies": [
+        "writting",
+        "singing"
+      ],
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "title": "fsff",
+      "author": "fsff",
+      "file": "C:\\fakepath\\bedroom-pr.jpeg",
+      "id": 1
+    },
+    {
+      "title": "ghfhfh",
+      "author": "fhgfh",
+      "file": "C:\\fakepath\\Screenshot (7).png",
+      "id": 2
+    }
+  ]
+}
